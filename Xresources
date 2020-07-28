@@ -1,0 +1,4 @@
+URxvt*scrollTtyOutput: false
+URxvt.font: xft:monospace:size=12
+
+URxvt.scrollBar: false
