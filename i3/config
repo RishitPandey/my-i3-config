@@ -205,7 +205,7 @@ bindsym $mod+r mode "resize"
 #######################################################################
 #exec i3-config-wizard
 #
-for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 1
 # Set inner/outer gaps
 gaps inner 14
 gaps outer -2
@@ -259,7 +259,7 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 exec_always picom
-exec_always feh --bg-scale ~/Downloads/v14gouvi78d51.png
+exec_always feh --bg-scale ~/Downloads/sway_config/wallpapers/temple.jpg
 bindsym $mod+d exec rofi -show drun
 exec_always xset b off
 
@@ -282,3 +282,6 @@ client.background       $bg
 
 # PROTIP: You can also dynamically set dmenu's colors this way:
 #bindsym $mod+d exec dmenu_run -nb "$fg" -nf "$bg" -sb "$bg" -sf "$fg"
+exec_always ~/.config/polybar/launch.sh
+new_window pixel 1
+new_float pixel 2
